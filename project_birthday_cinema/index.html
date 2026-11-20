@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CINEMA | Midnight Romance</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- CINEMATIC INTRO -->
+    <section class="intro" id="intro">
+      <div class="stars"></div>
+
+      <div class="intro-content">
+        <p class="eyebrow">A SPECIAL EXPERIENCE</p>
+
+        <h1>
+          Midnight<br />
+          <span>Romance</span>
+        </h1>
+
+        <div class="ornament">
+          <span></span>
+          <div class="heart">♡</div>
+          <span></span>
+        </div>
+
+        <p class="intro-description">
+          Some moments deserve to be remembered forever.
+        </p>
+
+        <button class="begin-btn" id="beginBtn">
+          <span>Begin the Experience</span>
+          <span class="arrow">→</span>
+        </button>
+
+        <!-- CINEMA — PASSCODE MODAL -->
+        <div class="passcode-overlay" id="passcodeOverlay">
+          <div class="passcode-modal">
+            <p class="passcode-eyebrow">A LITTLE SURPRISE AWAITS YOU</p>
+
+            <h2 class="passcode-title">
+              Unlock<br />
+              <span>Your Surprise</span>
+            </h2>
+
+            <p class="passcode-description">Enter your birthday to unlock</p>
+
+            <!-- PASSWORD DOTS -->
+            <div class="passcode-dots" id="passcodeDots">
+              <span class="passcode-dot"></span>
+              <span class="passcode-dot"></span>
+              <span class="passcode-dot"></span>
+              <span class="passcode-dot"></span>
+              <span class="passcode-dot"></span>
+              <span class="passcode-dot"></span>
+              <span class="passcode-dot"></span>
+              <span class="passcode-dot"></span>
+            </div>
+
+            <!-- ERROR MESSAGE -->
+            <p class="passcode-message" id="passcodeMessage">
+              Enter your birthday ♡
+            </p>
+
+            <!-- NUMERIC KEYPAD -->
+            <div class="passcode-keypad" id="passcodeKeypad">
+              <button class="passcode-key" data-key="1">1</button>
+              <button class="passcode-key" data-key="2">2</button>
+              <button class="passcode-key" data-key="3">3</button>
+
+              <button class="passcode-key" data-key="4">4</button>
+              <button class="passcode-key" data-key="5">5</button>
+              <button class="passcode-key" data-key="6">6</button>
+
+              <button class="passcode-key" data-key="7">7</button>
+              <button class="passcode-key" data-key="8">8</button>
+              <button class="passcode-key" data-key="9">9</button>
+
+              <div class="passcode-empty"></div>
+
+              <button class="passcode-key" data-key="0">0</button>
+
+              <button
+                class="passcode-delete"
+                id="passcodeDelete"
+                aria-label="Delete last digit"
+              >
+                ⌫
+              </button>
+            </div>
+
+            <button class="passcode-cancel" id="passcodeCancel">CANCEL</button>
+          </div>
+        </div>
+
+        <p class="footer-text">MADE WITH LOVE</p>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
